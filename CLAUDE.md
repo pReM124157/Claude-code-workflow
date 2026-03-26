@@ -2,7 +2,7 @@
 
 > [根目录](../CLAUDE.md) > **skills-v2**
 
-**Last Updated**: 2026-03-26 (v1.7.98)
+**Last Updated**: 2026-03-26 (v1.7.99)
 
 ---
 
@@ -10,8 +10,9 @@
 
 > 完整变更历史请查看 [CHANGELOG.md](./CHANGELOG.md)
 
-### 2026-03-26 (v1.7.98)
-- 🐛 **Gemini `resume latest` 模板修正**：Gemini stream-json 不输出 SESSION_ID，所有模板改为 Gemini 用 `resume latest`
+### 2026-03-26 (v1.7.99)
+- 🐛 **Gemini `resume latest` 全模板修正**：7 个模板统一 Gemini 用 `resume latest`，Codex 保持 `resume <SESSION_ID>`
+- 🐛 **spec-impl 跨阶段会话复用**：原型→审查阶段复用会话，审查带有原型上下文
 
 ### 2026-03-26 (v1.7.97)
 - 🐛 **Gemini `-p -` 显示修正**：`Command:` 行显示真实任务文本而非 `-p -`，消除误导
